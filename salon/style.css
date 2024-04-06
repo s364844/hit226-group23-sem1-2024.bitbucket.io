@@ -1,0 +1,161 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Top Bar and Header */
+  .top-bar {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .promo-text {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 0;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .logo-container img {
+    width: 120px; /* Adjust based on your logo's actual width */
+  }
+  
+  .store-title {
+    color: #000000;
+    margin-left: 10px;
+  }
+  
+  /* Navigation and Search Form */
+  .search-form {
+    display: flex;
+    margin: 0 20px;
+  }
+  
+  .search-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .search-form button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .header-nav ul, .main-navigation ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header-nav li, .main-navigation li {
+    padding: 0 15px;
+  }
+  
+  .header-nav a, .main-navigation a {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .header-nav a:hover, .main-navigation a:hover {
+    background-color: #555;
+    color: #ffffff;
+  }
+  
+  /* Checkout Section */
+  .checkout h1, .container h2 {
+    color: #333;
+  }
+  
+  form {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"], select, button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333; /* or any color you prefer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* This centers the content horizontally */
+    align-items: center; /* This centers the content vertically */
+  }
+  
+  .footer-logo {
+    height: 50px; /* or the height you prefer */
+    width: auto; /* to maintain aspect ratio */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header-content, .search-form, .header-nav ul, .main-navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .header-nav li, .main-navigation li {
+        padding: 10px 0;
+    }
+  
+    .search-form {
+        width: 100%;
+    }
+  }
+  
